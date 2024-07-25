@@ -24,6 +24,7 @@ module.exports = {
     'notice/notice': [
       'error',
       {
+        mustMatch: "Copyright %YEAR% Cortex Applications, Inc.".replace("%YEAR%", new Date().getFullYear().toString()),
         templateFile: path.resolve(__dirname, 'notice-template.txt'),
       },
     ],
